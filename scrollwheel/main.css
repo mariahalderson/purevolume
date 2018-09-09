@@ -1,0 +1,71 @@
+#container{
+  width: 200px;
+  height:200px;
+  margin: auto;
+  position: fixed;
+}
+
+#outerring{
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  border-radius: 100%;
+  background-color: #999;
+/*   animation: knobSpin 2s infinite; */
+}
+
+#knob{
+  height: 130px;
+  width: 130px;
+  margin: auto;
+  border-radius: 100%;
+  background-color: #666;
+}
+
+#knob::before{
+  content: "";
+  display: block;
+  border-right: 30px solid #222;
+  border-bottom: 30px solid transparent;
+  border-top: 30px solid transparent;
+  width: 0px;
+  position: relative;
+  top: 35px;
+  left: 10px;
+}
+
+@keyframes knobSpin{
+  from{transform: rotate(0deg);}
+  to{transform: rotate(360deg);}
+}
+
+@keyframes knobSpinRev{
+  from{transform: rotate(360deg);}
+  to{transform: rotate(0deg);}
+}
+
+.knobSpin{
+  animation: knobSpin 1s;
+}
+
+.knobSpinRev{
+  animation: knobSpinRev 1s;
+}
+
+
+
+
+#box{
+  width: 10px;
+  height: 10px;
+  position: relative;
+  top: 1500px;
+  background-color: red;
+}
+
+#scroll{
+  position: fixed;
+  margin-left: 300px;
+}
