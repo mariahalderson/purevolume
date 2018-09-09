@@ -2,7 +2,8 @@ var hamburger = document.querySelector("#hamburgermenu"),
 	topbar = document.querySelector(".bar1"),
 	midbar = document.querySelector(".bar2"),
 	lowbar = document.querySelector(".bar3"),
-	nav = document.querySelector("#navmenu");
+	nav = document.querySelector("#navmenu"),
+	logo = document.querySelector("#logospace img");
 
 
 	 hamburger.addEventListener('click', function (){

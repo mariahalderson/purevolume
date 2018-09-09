@@ -151,13 +151,30 @@ header{
 
 #navmenu ul{
 	list-style-type: none;
+	margin-top: 150px;
+}
+
+#navmenu ul li{
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+	font-family: "Segoe UI";
+	font-weight: 500;
+	margin-bottom: 27px;
 }
 
 
 /*logo*/
 #logospace{
+	position: relative;
+	z-index: 3;
 	max-width: 140px;
 	overflow: hidden;
+}
+
+.change-logospace img{
+	filter: invert(100%);
 }
 
 
