@@ -237,3 +237,55 @@ section .article:nth-child(3), section .article:nth-child(4){
 	font-family: "Segoe UI";
 	font-weight: 700;
 }
+
+
+
+
+
+
+
+
+
+/*----------ARTICLE PAGE----------*/
+#gallery{
+	display: flex;
+	flex-direction: column;
+}
+
+#galleryContainer{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	place-items: center center;
+}
+
+.galleryImage{
+	grid-column: 1 / -1;
+	grid-row: 1 / -1;
+	overflow: hidden;
+}
+
+#bullets{
+	border: 1px solid red;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.bullet{
+	height: 16px;
+	width: 16px;
+	border-radius: 100%;
+	background-color: #01bec0;
+	margin: 5px;
+	transition: all 0.3s ease-in;
+}
+
+.bullet:hover{
+	background-color: #666;
+}
+
+#bullets .active{
+	background-color: #666;
+}
+
