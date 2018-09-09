@@ -48,6 +48,16 @@ img{
 	max-width: 100%;
 }
 
+p{
+	font-family: "Segoe UI";
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+.bold{
+	font-weight: 700;
+}
+
 .title{
 	font-family: "Segoe UI";
 	font-size: 20px;
@@ -57,7 +67,12 @@ img{
 	margin-bottom: 15px;
 }
 
-.pagetitle{
+.title-article{
+	font-size: 30px;
+	text-align: center;
+}
+
+.title-page{
 	font-family: "Segoe UI";
 	font-size: 30px;
 	font-weight: 700;
@@ -86,6 +101,7 @@ header{
 	align-items: center;
 	padding: 10px 20px;
 	background-color: #fff;
+	box-shadow: 0px 5px 5px rgba(0,0,0,0.1);
 }
 
 
@@ -237,3 +253,69 @@ section .article:nth-child(3), section .article:nth-child(4){
 	font-family: "Segoe UI";
 	font-weight: 700;
 }
+
+
+
+
+
+
+
+
+
+/*----------ARTICLE PAGE----------*/
+#gallery{
+	display: flex;
+	flex-direction: column;
+	margin-top: 78px;
+}
+
+#galleryContainer{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	place-items: center center;
+}
+
+.galleryImage{
+	grid-column: 1 / -1;
+	grid-row: 1 / -1;
+	overflow: hidden;
+	opacity: 0;
+	transition: all 0.6s ease-out;
+}
+
+#bullets{
+	grid-column: 1 / -1;
+	grid-row: 1 / -1;
+	place-self: end center;
+	margin-bottom: 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	z-index: 2;
+}
+
+.bullet{
+	height: 16px;
+	width: 16px;
+	border-radius: 100%;
+	background-color: #fff;
+	margin: 5px;
+	transition: all 0.3s ease-in;
+}
+
+.bullet:hover{
+	background-color: #666;
+}
+
+#bullets .active{
+	background-color: #666;
+}
+
+
+/*article*/
+.article-image{
+	max-width: 100%;
+	overflow: hidden;
+}
+
