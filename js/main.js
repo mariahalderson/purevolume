@@ -10,6 +10,21 @@ var hamburger = document.querySelector("#hamburgermenu"),
 	galleries = document.querySelectorAll(".galleryImage img");
 
 
+	function chgLogo(){
+		//white logo on dark nav bckgd
+	 	if(logo.classList.contains("open")){
+
+	 		logo.src="images/logo-light.png";
+
+	 	}else{
+	 		//keep white logo until nav slides out of view
+	 		setTimeout(function(){logo.src="images/logo-gradient.png";}, 350);
+	 		
+	 	}
+	}
+
+
+	
 	 hamburger.addEventListener('click', function (){
 	 	//toggle rotating transitions when open/closing mobile menu
 	 	 topbar.classList.toggle("change-bar1");
@@ -23,6 +38,10 @@ var hamburger = document.querySelector("#hamburgermenu"),
 	 	 //hide gallery
 	 	galleries.forEach(gallery=>gallery.classList.toggle("hide"));
 	 	dots.forEach(dot=>dot.classList.toggle("hide"));
+
+	 	logo.classList.toggle("open");
+
+	 	chgLogo();
 
 
 	});
