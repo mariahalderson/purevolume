@@ -21,8 +21,9 @@
 		<header id="mainHeader">
 			
 			<nav>
+				<h2 class="hide">Main Site Navigation</h2>
 				
-				<div id="hamburgermenu">
+				<div id="hamburgermenu" tabindex="1">
 					<div class="hambar bar1"></div>
 					<div class="hambar bar2"></div>
 					<div class="hambar bar3"></div>
@@ -47,7 +48,11 @@
 
 
 			<div id="searchbar">
-				<img src="images/icon-search.png" alt="search icon">
+				<img src="images/icon-search.png" alt="search icon" tabindex="2">
+
+				<div id="search" class="hide">
+					<input type="text" name="search" placeholder="search...">
+				</div>
 			</div>
 
 		</header>
@@ -96,7 +101,7 @@
 					</div>
 
 					<div class="artlink">
-						<a href="#" class="artop">Drake's Charmed Life: The Tough Times And Success Of Aubrey Graham</a>
+						<a href="article.html" class="artop">Drake's Charmed Life: The Tough Times And Success Of Aubrey Graham</a>
 					</div>
 
 				</div>

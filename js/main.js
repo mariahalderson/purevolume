@@ -3,7 +3,11 @@ var hamburger = document.querySelector("#hamburgermenu"),
 	midbar = document.querySelector(".bar2"),
 	lowbar = document.querySelector(".bar3"),
 	nav = document.querySelector("#navmenu"),
-	logo = document.querySelector("#logospace img");
+	logo = document.querySelector("#logospace img"),
+	searchbutton = document.querySelector("#searchbar img"),
+	searchbar = document.querySelector("#search"),
+	dots = document.querySelectorAll(".bullet"),
+	galleries = document.querySelectorAll(".galleryImage img");
 
 
 	 hamburger.addEventListener('click', function (){
@@ -16,4 +20,14 @@ var hamburger = document.querySelector("#hamburgermenu"),
 	 	 nav.classList.toggle("change-nav");
 	 	 nav.classList.toggle("before-nav");
 
+	 	 //hide gallery
+	 	galleries.forEach(gallery=>gallery.classList.toggle("hide"));
+	 	dots.forEach(dot=>dot.classList.toggle("hide"));
+
+
 	});
+
+	 searchbutton.addEventListener('click', function(){
+	 	//toggle search bar on/off
+	 	searchbar.classList.toggle("hide");
+	 });
