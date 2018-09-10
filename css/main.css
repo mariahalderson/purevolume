@@ -48,14 +48,21 @@ img{
 	max-width: 100%;
 }
 
+a{
+	text-decoration: none;
+	color: #fff;
+}
+
 p{
 	font-family: "Segoe UI";
 	font-size: 20px;
 	margin-bottom: 30px;
+	line-height: 35px;
 }
 
 .bold{
 	font-weight: 700;
+	font-size: 16px;
 }
 
 .title{
@@ -67,9 +74,15 @@ p{
 	margin-bottom: 15px;
 }
 
+#article .title{
+	text-align: center;
+	margin-top: 30px;
+}
+
 .title-article{
 	font-size: 30px;
 	text-align: center;
+	margin-bottom: 45px;
 }
 
 .title-page{
@@ -313,6 +326,10 @@ section .article:nth-child(3), section .article:nth-child(4){
 		/*border-right: 0.5px solid rgba(0,0,0,0.1);*/
 		/*box-shadow: 0px 5px 8px rgba(0,0,0,0.3);*/
 		width: 100%;
+	}
+
+	.article-image{
+		text-align: center;
 	}
 
 	.thumb{

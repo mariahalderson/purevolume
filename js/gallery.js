@@ -3,6 +3,7 @@ var images = Array.from(document.querySelectorAll(".galleryImage")),
 	bulletContainer = document.querySelector("#bullets"),
 	bulletContent = "";
 
+
 //populate x amount of bullets to match images in gallery
 for(var i=0; i<images.length; i++){
 	bulletContent += "<div class='bullet'></div>";
