@@ -10,6 +10,7 @@
 
 	<title>Pure Volume</title>
 
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 
 </head>
@@ -70,7 +71,24 @@
 			<h2 class="hide">Promotional image/video</h2>
 
 			<div id="heroContainer">
-				<img src="http://www.placecage.com/400/150" alt="hero image for pure volume">
+
+				<video src="video/purevolumevidDESKTOP.mp4" autoplay muted>
+			</div>
+			
+
+			<div id="controls">
+
+				<div id="maincontrols">
+					<div id="play"></div>
+					<div id="pause"></div>
+				</div>
+
+
+				<div id="othercontrols">
+					<div id="stop"></div>
+					<div id="replay"></div>
+				</div>
+
 			</div>
 
 			<p class="title-page">latest articles</p>
@@ -137,8 +155,15 @@
 		<section id="entertainment">
 			<h2 class="hide">Latest Entertainment Articles</h2>
 
-			<p class="title">entertainment</p>
-
+			
+			<div class="banner" id="ebanner">
+				<div class="textcontainer">
+				<p class="bannertext">ENTERTAINMENT</p>
+			</div>
+				<img src="images/ebanner.gif" alt="Entertainment banner">
+			</div>
+				
+			<!-- <p class="title section-title">entertainment</p> -->
 
 			<div class="articles poparticles">	
 				<div class="article">
@@ -190,7 +215,9 @@
 		<section id="music">
 			<h2 class="hide">Latest Music Articles</h2>
 
-			<p class="title">music</p>
+			<img class="banner" src="images/mbanner.gif" alt="Entertainment banner">
+				
+			<p class="title section-title">music</p>
 
 
 			<div class="articles musicarticles">	
@@ -260,6 +287,7 @@
 		</footer>
 	</main>
 
+	<script src="js/video.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/hover.js"></script>
 	<script src="js/nav.js"></script>
