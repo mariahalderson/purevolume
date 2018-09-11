@@ -15,7 +15,7 @@ function start(){
 		navblock.style.transform = "translateX(0px)";
 }
 
-
+start();
 
 
 // function popculture(){
@@ -93,4 +93,4 @@ window.addEventListener('scroll', moveblock, false);
 // items[2].addEventListener('mouseenter', entertainment);
 // items[3].addEventListener('mouseenter', music);
 
-// items.forEach(item=>item.addEventListener('mouseout', moveblock));
+listitems.forEach(item=>item.addEventListener('mouseout', moveblock));
