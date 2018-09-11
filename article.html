@@ -19,42 +19,47 @@
 	<main id="siteContainer">
 		
 		<header id="mainHeader">
-			
-			<nav>
-				<h2 class="hide">Main Site Navigation</h2>
+		
 				
-				<div id="hamburgermenu">
+				<div id="hamburgermenu" tabindex="1">
 					<div class="hambar bar1"></div>
 					<div class="hambar bar2"></div>
 					<div class="hambar bar3"></div>
 				</div>
 
-				
-				<div id="navmenu" class="before-nav">
-					<ul>
-						<li><a href="index.html">home</a></li>
-						<li>pop culture</li>
-						<li>music</li>
-						<li>entertainment</li>
-					</ul>
+
+				<div id="logospace">
+					<a href="index.html">
+						<img src="images/logo-gradient.png" alt="Pure Volume Logo">
+					</a>
 				</div>
 
-			</nav>
+
+				<nav id="navmenu" class="before-nav">
+					<h2 class="hide">Main Site Navigation</h2>
+
+					<div>
+						<ul>
+							<li>home</li>
+							<li>pop culture</li>
+							<li>music</li>
+							<li>entertainment</li>
+						</ul>
+					</div>
+
+				</nav>
 
 
-			<div id="logospace">
-				<img src="images/logo-gradient.png" alt="Pure Volume Logo">
-			</div>
+				<div id="searchbar">
 
+					<img src="images/icon-search.png" alt="search icon" tabindex="2">
 
-			<div id="searchbar">
-				<img src="images/icon-search.png" alt="search icon">
+					<div id="search" class="hide">
+						<input type="text" name="search" placeholder="search...">
+					</div>
 
-				<div id="search" class="hide">
-					<input type="text" name="search" placeholder="search...">
 				</div>
-			</div>
-
+		
 		</header>
 
 
@@ -217,17 +222,30 @@
 
 		</section>
 
+		<footer>
+			
+			<div id="footerlogo">
+				<img src="images/logo-light.png" alt="light version of logo">
+			</div>
 
+			<nav id="footernav">
+				<h2 class="hide">Footer Navigation</h2>
 
+				<ul>
+					<li><a href="#">about</a></li>
+					<li><a href="#">contact</a></li>
+					<li><a href="#">copyright</a></li>
+					<li><a href="#">privacy</a></li>
+					<li><a href="#">terms</a></li>
+					<li><a href="#">impressum</a></li>
+			</nav>
 
+		</footer>
 
-
-
-
-
+	</main>
 		<script src="js/gallery.js"></script>
 		<script src="js/main.js"></script> 
 
-	</main>
+	
 </body>
 </html>

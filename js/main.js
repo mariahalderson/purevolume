@@ -49,4 +49,16 @@ var hamburger = document.querySelector("#hamburgermenu"),
 	 searchbutton.addEventListener('click', function(){
 	 	//toggle search bar on/off
 	 	searchbar.classList.toggle("hide");
+
+	 	//height opening
+	 	if (searchbar.style.height = "0px"){
+
+		 	setTimeout(function(){
+		 		searchbar.style.height = "100vh";
+		 	}, 5);
+
+	 	}else{
+
+	 		searchbar.style.height = "0px";
+	 	}
 	 });
