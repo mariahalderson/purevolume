@@ -232,6 +232,7 @@ header{
 #logospace:hover{
 	animation: logohover 0.3s linear;
 	animation-iteration-count: 2;
+	cursor: pointer;
 }
 
 .change-logospace img{
@@ -262,7 +263,7 @@ header{
 		width: 2px;
 		height: 78px;
 		background-color: #c4343e;
-		transition: 0.4s linear;
+		transition: 0.4s ease-out;
 	}
 
 	 #hamburgermenu{
