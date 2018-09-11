@@ -1,6 +1,6 @@
-var navblock = document.querySelector("#navhighlight"),
-	items = Array.from(document.querySelectorAll("#navlist li a")),
-	popheight = document.querySelector("#popculture").offsetHeight,
+// var navblock = document.querySelector("#navhighlight"),
+// 	items = Array.from(document.querySelectorAll("#navlist li a")),
+var popheight = document.querySelector("#popculture").offsetHeight,
 	mheight = document.querySelector("#music").offsetHeight,
 	eheight = document.querySelector("#entertainment").offsetHeight,
 	heroheight = document.querySelector("#hero").offsetHeight;
@@ -18,47 +18,47 @@ function start(){
 
 
 
-function popculture(){
-	resettext();
+// function popculture(){
+// 	resettext();
 
-		navblock.style.width = "132px";
-		navblock.style.transform = "translateX(150px)";	
+// 		navblock.style.width = "132px";
+// 		navblock.style.transform = "translateX(150px)";	
 
-		items[1].style.color = "#fff";
-}
-
-
-
-
-function entertainment(){
-	resettext();
-
-		navblock.style.width = "164px";
-		navblock.style.transform = "translateX(352px)";
-
-		items[2].style.color = "#fff";
-}
+// 		items[1].style.color = "#fff";
+// }
 
 
 
 
-function music(){
-	resettext();
+// function entertainment(){
+// 	resettext();
 
-		navblock.style.width = "67px";
-		navblock.style.transform = "translateX(455px)";
+// 		navblock.style.width = "164px";
+// 		navblock.style.transform = "translateX(352px)";
 
-		items[3].style.color = "#fff";
-}
-
-
+// 		items[2].style.color = "#fff";
+// }
 
 
-function resettext(){
 
-	items.forEach(item=>item.style.color = "#283744");
 
-}
+// function music(){
+// 	resettext();
+
+// 		navblock.style.width = "67px";
+// 		navblock.style.transform = "translateX(455px)";
+
+// 		items[3].style.color = "#fff";
+// }
+
+
+
+
+// function resettext(){
+
+// 	items.forEach(item=>item.style.color = "#283744");
+
+// }
 
 
 
@@ -89,8 +89,8 @@ function resettext(){
 
 window.addEventListener('scroll', moveblock, false);
 
-items[1].addEventListener('mouseenter', popculture);
-items[2].addEventListener('mouseenter', entertainment);
-items[3].addEventListener('mouseenter', music);
+// items[1].addEventListener('mouseenter', popculture);
+// items[2].addEventListener('mouseenter', entertainment);
+// items[3].addEventListener('mouseenter', music);
 
-items.forEach(item=>item.addEventListener('mouseout', moveblock));
+// items.forEach(item=>item.addEventListener('mouseout', moveblock));
