@@ -19,42 +19,49 @@
 	<main id="siteContainer">
 		
 		<header id="mainHeader">
-			
-			<nav>
-				<h2 class="hide">Main Site Navigation</h2>
+		
 				
-				<div id="hamburgermenu">
+				<div id="hamburgermenu" tabindex="1">
 					<div class="hambar bar1"></div>
 					<div class="hambar bar2"></div>
 					<div class="hambar bar3"></div>
 				</div>
 
-				
-				<div id="navmenu" class="before-nav">
-					<ul>
-						<li><a href="index.html">home</a></li>
-						<li>pop culture</li>
-						<li>music</li>
-						<li>entertainment</li>
-					</ul>
+
+				<div id="logospace">
+					<a href="index.html">
+						<img src="images/logo-gradient.png" alt="Pure Volume Logo">
+					</a>
 				</div>
 
-			</nav>
+
+				<nav id="navmenu" class="before-nav">
+					<h2 class="hide">Main Site Navigation</h2>
+
+					<div id="navhighlight"></div>
+
+					<div>
+						<ul id="navlist">
+							<li><a href="index.html">home</a></li>
+							<li><a href="#">pop culture</a></li>
+							<li><a href="#">entertainment</a></li>
+							<li><a href="#">music</a></li>
+						</ul>
+					</div>
+
+				</nav>
 
 
-			<div id="logospace">
-				<img src="images/logo-gradient.png" alt="Pure Volume Logo">
-			</div>
+				<div id="searchbar">
 
+					<img src="images/icon-search.png" alt="search icon" tabindex="2">
 
-			<div id="searchbar">
-				<img src="images/icon-search.png" alt="search icon">
+					<div id="search" class="hide">
+						<input type="text" name="search" placeholder="search...">
+					</div>
 
-				<div id="search" class="hide">
-					<input type="text" name="search" placeholder="search...">
 				</div>
-			</div>
-
+		
 		</header>
 
 
@@ -67,19 +74,7 @@
 			<div id="galleryContainer">
 		
 				<div class="galleryImage">
-					
-						<!-- <img srcset="images/d1-sm.jpg 500w, images/d1-med.jpg 700w, images/d1-lg.jpg 1000w" sizes="500px, (min-width: 600px) 700px, (min-width: 900px) 1000px" src="d1-med.jpg" alt="Drake medium"> -->
-
 						<img id="drake" srcset="images/d1-sm.jpg 391w, images/d1-med.jpg 700w, images/d1-lg.jpg 1000w" sizes="100vw" src="images/d1-md.jpg" alt="Drake medium">
-
-						<!-- <picture>
-							<source srcset="images/d1-sm.jpg" media="(min-width: 100px)">
-							<source srcset="images/d1-med.jpg" media="(min-width: 600px)">
-							<source srcset="images/d1-lg.jpg" media="(min-width: 900px)">
-						</picture> -->
-
-
-					
 				</div>
 
 
@@ -111,7 +106,7 @@
 
 			<p class="title title-article">Drake's Charmed Life: The Tough Times And Successes of Aubrey Graham</p>
 
-			<div class="adspace"></div>
+			<div class="adspace">ADVERTISEMENT</div>
 
 			<p>Remember when Drake was just a disabled ex-basketball star attending a fictional Canadian high school? Nobody would ever have guessed that he would eventually become one of the most beloved and successful icons in the music world.</p>
 
@@ -166,6 +161,8 @@
 
 			<p class="bold">See which girl tore two friends apart and led to violence.</p>
 
+			<div class="adspace">ADVERTISEMENT</div>
+
 
 			<p class="title">He Almost Gave Up On Music And Got A Day Job</p>
 
@@ -217,17 +214,31 @@
 
 		</section>
 
+		<footer>
+			
+			<div id="footerlogo">
+				<img src="images/logo-light.png" alt="light version of logo">
+			</div>
 
+			<nav id="footernav">
+				<h2 class="hide">Footer Navigation</h2>
 
+				<ul>
+					<li><a href="#">about</a></li>
+					<li><a href="#">contact</a></li>
+					<li><a href="#">copyright</a></li>
+					<li><a href="#">privacy</a></li>
+					<li><a href="#">terms</a></li>
+					<li><a href="#">impressum</a></li>
+			</nav>
 
-
-
-
-
-
-		<script src="js/gallery.js"></script>
-		<script src="js/main.js"></script> 
+		</footer>
 
 	</main>
+		<script src="js/gallery.js"></script>
+		<script src="js/main.js"></script> 
+		<script src="js/hover.js"></script>
+
+	
 </body>
 </html>
