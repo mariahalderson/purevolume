@@ -1,31 +1,3 @@
-/*animations*/
-@keyframes topbar{
-	from{transform: rotate(0deg);}
-	to{transform: rotate(405deg) translateY(10px); margin-top: 15px;}
-}
-
-.top-bar{
-	position: relative;
-	animation: topbar 0.3s ease-out;
-	margin-top: 15px;
-}
-
-@keyframes midbar{
-	from{transform: rotate(0deg);}
-	to{transform: rotate(495deg);}
-}
-
-.mid-bar{
-	animation: midbar 0.3s ease-out;
-}
-
-
-
-
-
-
-
-
 
 /*general*/
 *{
@@ -116,7 +88,6 @@ header{
 	background-color: #fff;
 	box-shadow: 0px 5px 5px rgba(0,0,0,0.1);
 }
-
 
 
 /*navigation*/
@@ -230,13 +201,71 @@ header{
 /*logo*/
 #logospace{
 	position: relative;
-	z-index: 3;
+	z-index: 999;
 	max-width: 140px;
 	overflow: hidden;
 }
 
 .change-logospace img{
 	filter: invert(100%);
+}
+
+
+
+
+/*-MEDIA QUERIES-*/
+@media screen and (min-width: 950px){
+	header{
+		flex-direction: row;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+	nav{
+		max-height: 78px;
+	}
+
+	 #hamburgermenu{
+	 	display: none;
+	 }
+
+	 .before-nav{
+		transform: translateX(0px);
+		transition: 0.8s all linear;
+		width: auto;
+}
+
+	 #navmenu{
+	 	position: static;
+	 	height: auto;
+	 	background: none;
+	 	margin-left: 150px;
+	 }
+
+	 #navmenu ul{
+	 	display: flex;
+	 	flex-direction: row;
+	 	margin-top: 0px;
+	 	height: 78px;
+	 }
+
+	 #navmenu ul .active{
+	 	background-color: #283744;
+	 	color: #fff;
+	 }
+
+	 #navmenu ul li{
+	 	color: #283744;
+	 	margin: 0px 18px;
+	 	line-height: 78px;
+	 	height: 100%;
+	 	padding: 0px 3px;
+	 }
+
+	 #navmenu ul li:first-child{
+	 	display: none;
+	 }
+
 }
 
 
@@ -276,6 +305,7 @@ section .article:nth-child(3), section .article:nth-child(4){
 
 .thumb{
 	box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+	max-width: 200px;
 }
 
 .artlink{
@@ -290,6 +320,11 @@ section .article:nth-child(3), section .article:nth-child(4){
 	font-family: Arial;
 	font-size: 18px;
 	text-align: center;
+	transition: 0.3s ease;
+}
+
+.artop:hover{
+	color: #c4343e;
 }
 
 .artop:focus{
@@ -311,21 +346,23 @@ section .article:nth-child(3), section .article:nth-child(4){
 
 /*MEDIA QUERIES*/
 @media screen and (min-width: 720px){
+
+	#popculture, #music, #entertainment{
+		padding: 0px 25px;
+	}
+
 	.articles{
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(100px, 340px));
-		grid-column-gap: 16px;
-		max-width: 1250px;
-		margin: auto;
-		place-items: start center;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: flex-start;
+		/*padding: 0px 25px;*/
 	}
 
 	.article{
 		flex-direction: column;
 		border-bottom: none;
-		/*border-right: 0.5px solid rgba(0,0,0,0.1);*/
-		/*box-shadow: 0px 5px 8px rgba(0,0,0,0.3);*/
-		width: 100%;
+		max-width: 400px;
 	}
 
 	.article-image{
@@ -333,15 +370,29 @@ section .article:nth-child(3), section .article:nth-child(4){
 	}
 
 	.thumb{
-		width: 100%;
-		background-color: #999;
+		max-width: 300px;
 		text-align: center;
+		margin-bottom: 10px;
 	}
 
 	.artlink{
-		max-width: none;
+		max-width: 300px;
 	}
 }
+
+
+
+
+@media screen and (min-width: 800px){
+	.thumb{
+		max-width: 350px;
+	}
+
+	.artlink{
+		max-width: 300px;
+	}
+}
+
 
 
 
@@ -355,8 +406,9 @@ section .article:nth-child(3), section .article:nth-child(4){
 #gallery{
 	display: flex;
 	flex-direction: column;
-	margin-top: 78px;
+	margin: 78px auto;
 	z-index: 1;
+	max-width: 1000px;
 }
 
 #galleryContainer{
@@ -404,8 +456,32 @@ section .article:nth-child(3), section .article:nth-child(4){
 
 
 /*article*/
+#article{
+	max-width: 1620px;
+	margin: auto;
+}
+
 .article-image{
-	max-width: 100%;
+	max-width: 1000px;
 	overflow: hidden;
+	margin: auto;
+}
+
+
+
+
+/*-MEDIA QUERIES-*/
+@media screen and (min-width: 720px){
+#gallery{
+	margin: 125px auto;
+}
+
+#article{
+	padding: 0px 100px;
+}
+
+.article-image{
+	margin-bottom: 50px;
+}
 }
 
