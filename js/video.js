@@ -6,23 +6,33 @@ var vid = document.querySelector("video"),
 	replaybtn = document.querySelector("#replay");
 
 //change video source based on screen width
-function pickvid(){
+// function pickvid(){
 
-	var winwidth = window.innerWidth;
-	console.log(winwidth);
-	if(winwidth < 1000){
-		vid.src="video/purevolumevidMOBILE.mp4";
-	}else{
-		vid.src="video/purevolumevidDESKTOP.mp4";
-	}
+// 	var winwidth = window.innerWidth;
+// 	console.log(winwidth);
+// 	if(winwidth < 1000){
+// 		vid.src="video/purevolumevidMOBILE.mp4";
+// 	}else{
+// 		vid.src="video/purevolumevidDESKTOP.mp4";
+// 	}
+// }
+
+//function videosize(){
+if(window.matchMedia("(min-width: 1000px)").matches){
+	vid.src = "video/purevolumevidDESKTOP.mp4";
+}else{
+	vid.src = "video/purevolumevidMOBILE.mp4";
 }
+//}
+
+//vudeosize();
 
 //choose correct video size
-pickvid();
+//pickvid();
 
 
 //change video src if window resizes
-window.addEventListener('resize', pickvid);
+//window.addEventListener('resize', pickvid);
 
 
 
