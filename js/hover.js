@@ -3,20 +3,28 @@ var navblock = document.querySelector("#navhighlight"),
 
 
 
+//make sure nav is the right color
 function resettext(){
 
-	listitems.forEach(item=>item.style.color = "#283744");
+	if(window.innerWidth > 949){
 
+		listitems.forEach(item=>item.style.color = "#283744");
+	
+	}if(window.innerWidth < 949){
+
+		listitems.forEach(item=>item.style.color = "#fff");
+	}
 }
 
 
+//functions for each section hovered/scrolled
 function popculture(){
-	resettext();
+	 resettext();
 
 		navblock.style.width = "132px";
-		navblock.style.transform = "translateX(150px)";	
+		navblock.style.transform = "translateX(150px)";
 
-		listitems[1].style.color = "#fff";
+		 listitems[1].style.color = "#fff";
 }
 
 
@@ -25,8 +33,8 @@ function popculture(){
 function entertainment(){
 	resettext();
 
-		navblock.style.width = "164px";
-		navblock.style.transform = "translateX(352px)";
+		navblock.style.width = "155px";
+		navblock.style.transform = "translateX(340px)";
 
 		listitems[2].style.color = "#fff";
 }
@@ -37,23 +45,26 @@ function entertainment(){
 function music(){
 	resettext();
 
-		navblock.style.width = "67px";
-		navblock.style.transform = "translateX(455px)";
+		navblock.style.width = "62px";
+		navblock.style.transform = "translateX(442px)";
 
 		listitems[3].style.color = "#fff";
 }
 
 
+//for article page
 entertainment();
 
 
 
 
+//if window changes to mobile/desktop size, update text color
+window.addEventListener('resize', resettext);
 
-
-
+//move red highlight to hovered section
 listitems[1].addEventListener('mouseenter', popculture);
 listitems[2].addEventListener('mouseenter', entertainment);
 listitems[3].addEventListener('mouseenter', music);
 
+//remove red highlight on mouse out
 listitems.forEach(item=>item.addEventListener('mouseout', entertainment));

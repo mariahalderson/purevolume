@@ -43,9 +43,9 @@
 
 						<ul id="navlist">
 							<li><a href="#">home</a></li>
-							<li><a href="#">pop culture</a></li>
-							<li><a href="#">entertainment</a></li>
-							<li><a href="#">music</a></li>
+							<li id="npop"><a href="#">pop culture</a></li>
+							<li id="nent"><a href="#">entertainment</a></li>
+							<li id="nmus"><a href="#">music</a></li>
 						</ul>
 					</div>
 
@@ -157,13 +157,11 @@
 
 			
 			<div class="banner" id="ebanner">
-				<!-- <div class="textcontainer">
-				<p class="bannertext">ENTERTAINMENT</p>
-			</div> -->
-				<img src="images/ebanner.gif" alt="Entertainment banner">
+
+				<img srcset="images/ebanner-med.gif 900w, images/ebanner-lg.gif 1920w" sizes="100vw" src="images/ebanner-med.gif" alt="Entertainment Banner">
+
 			</div>
-				
-			<p class="title section-title">entertainment</p>
+	
 
 			<div class="articles poparticles">	
 				<div class="article">
@@ -215,10 +213,9 @@
 		<section id="music">
 			<h2 class="hide">Latest Music Articles</h2>
 
-			<img class="banner" src="images/mbanner.gif" alt="Entertainment banner">
-				
-			<p class="title section-title">music</p>
-
+			<div class="banner" id="mbanner">
+				<img srcset="images/mbanner-med.gif 900w, images/mbanner-lg.gif 1920w" sizes="100vw" src="images/mbanner-med.gif" alt="Music Banner">
+			</div>
 
 			<div class="articles musicarticles">	
 				<div class="article">

@@ -170,6 +170,10 @@ header{
 	background-color: #fff;
 }
 
+#navhighlight{
+	display: none;
+}
+
 #navmenu{
 	position: absolute;
 	top: 0px;
@@ -317,13 +321,18 @@ header{
 	 	line-height: 78px;
 	 	height: 100%;
 	 	padding: 0px 3px;
+	 	transition: 0.4s ease-out;
 	 }
+
+	
 
 	 #navmenu ul li a{
 	 	color: #283744;
 	 	transition: 0.5s ease;
 	 }
-
+ #navmenu ul li:hover  a{
+	 	color: #fff;
+	 }
 	 #navmenu ul li:first-child{
 	 	display: none;
 	 }
