@@ -1,11 +1,11 @@
 // var navblock = document.querySelector("#navhighlight"),
 // 	items = Array.from(document.querySelectorAll("#navlist li a")),
+
+// if(window.innerWidth > 949){
 var popheight = document.querySelector("#popculture").offsetHeight,
 	mheight = document.querySelector("#music").offsetHeight,
 	eheight = document.querySelector("#entertainment").offsetHeight,
 	heroheight = document.querySelector("#hero").offsetHeight;
-
-
 
 
 function start(){
@@ -14,6 +14,7 @@ function start(){
 		navblock.style.width = "2px";
 		navblock.style.transform = "translateX(0px)";
 }
+
 
 start();
 
@@ -89,8 +90,12 @@ start();
 
 window.addEventListener('scroll', moveblock, false);
 
+
 // items[1].addEventListener('mouseenter', popculture);
 // items[2].addEventListener('mouseenter', entertainment);
 // items[3].addEventListener('mouseenter', music);
 
 listitems.forEach(item=>item.addEventListener('mouseout', moveblock));
+// } if (window.innerWidth < 949){
+// 	listitems.forEach(item=>item.style.color = "#fff");
+// }
