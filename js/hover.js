@@ -22,7 +22,7 @@ function popculture(){
 	 resettext();
 
 		navblock.style.width = "132px";
-		navblock.style.transform = "translateX(150px)";	
+		navblock.style.transform = "translateX(150px)";
 
 		 listitems[1].style.color = "#fff";
 }
@@ -33,8 +33,8 @@ function popculture(){
 function entertainment(){
 	resettext();
 
-		navblock.style.width = "164px";
-		navblock.style.transform = "translateX(352px)";
+		navblock.style.width = "155px";
+		navblock.style.transform = "translateX(340px)";
 
 		listitems[2].style.color = "#fff";
 }
@@ -45,8 +45,8 @@ function entertainment(){
 function music(){
 	resettext();
 
-		navblock.style.width = "67px";
-		navblock.style.transform = "translateX(455px)";
+		navblock.style.width = "62px";
+		navblock.style.transform = "translateX(442px)";
 
 		listitems[3].style.color = "#fff";
 }

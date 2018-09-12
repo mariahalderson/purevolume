@@ -8,6 +8,8 @@ var popheight = document.querySelector("#popculture").offsetHeight,
 	heroheight = document.querySelector("#hero").offsetHeight;
 
 
+
+
 function start(){
 	resettext();
 
