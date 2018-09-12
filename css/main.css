@@ -47,7 +47,7 @@ a{
 }
 
 p{
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", Arial, sans-serif;
 	font-size: 20px;
 	margin-bottom: 30px;
 	line-height: 35px;
@@ -59,9 +59,9 @@ p{
 }
 
 .title{
-	font-family: "Segoe UI";
-	font-size: 20px;
-	font-weight: 600;
+	font-family: "Open Sans Condensed", "Segoe UI", Arial, sans-serif;
+	font-size: 25px;
+	font-weight: 700;
 	text-transform: uppercase;
 	color: #283744;
 	margin-bottom: 15px;
@@ -73,13 +73,13 @@ p{
 }
 
 .title-article{
-	font-size: 30px;
+	font-size: 40px;
 	text-align: center;
 	margin-bottom: 45px;
 }
 
 .title-page{
-	font-family: "Oswald", Arial, sans-serif;
+	font-family: "Open Sans Condensed", Arial, sans-serif;
 	font-size: 30px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -330,9 +330,11 @@ header{
 	 	color: #283744;
 	 	transition: 0.5s ease;
 	 }
- #navmenu ul li:hover  a{
+
+ 	#navmenu ul li:hover  a{
 	 	color: #fff;
-	 }
+	}
+
 	 #navmenu ul li:first-child{
 	 	display: none;
 	 }
@@ -349,6 +351,7 @@ header{
 
 /*----------FOOTER----------*/
 footer{
+	clear: right;
 	width: 100%;
 	background: url("../images/footer-bckgd.png");
 	display: flex;
@@ -356,6 +359,7 @@ footer{
 	align-items: center;
 	padding: 30px 0px;
 	box-shadow: 0px -5px 5px rgba(0,0,0,0.1);
+	margin-top: 40px;
 }
 
 #footerlogo{
@@ -753,13 +757,35 @@ section .article:nth-child(3), section .article:nth-child(4){
 	font-size: 20px;
 }
 
+#next{
+	background-color: #c4343e;
+	max-width: 200px;
+	float: right;
+	margin-bottom: 40px;
+}
+
+#nextarticle{
+	text-transform: uppercase;
+	color: #fff;
+	margin: 20px 0;
+	padding: 8px;
+	text-align: center;
+	font-family: "Open Sans Condensed", Arial, sans-serif;
+	font-size: 30px;
+	cursor: pointer;
+}
+
 
 
 
 /*-MEDIA QUERIES-*/
 @media screen and (min-width: 720px){
-	#gallery{
+	/*#gallery{
 		margin: 125px auto;
+		height: 90vh;
+	}*/
+	#galleryContainer{
+		max-height: 80vh;
 	}
 
 	#article{
