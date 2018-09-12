@@ -425,6 +425,14 @@ footer{
 	overflow: hidden;
 }
 
+#heroContainer video{
+	display: none;
+}
+
+#heroContainer img{
+	display: block;
+}
+
 
 /*article sections*/
 section .article:nth-child(3), section .article:nth-child(4){
@@ -497,8 +505,13 @@ section .article:nth-child(3), section .article:nth-child(4){
 	}
 
 	#heroContainer video{
+		display: inline;
 		max-width: 100%;
 		margin: 0 auto;
+	}
+
+	#heroContainer img{
+		display:none;
 	}
 
 	#controls{
