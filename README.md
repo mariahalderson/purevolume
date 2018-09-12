@@ -4,18 +4,13 @@ The goal of our redesign was so show better usability, a more friendly UI, and t
 
 ## Built With
 
-* CSS Grid, javaScript - Front-end tools
-* Adobe XD, Photoshop, Illusta=rator - Design tools
+* CSS Grid, Flexbox, javaScript - Front-end tools
+* Adobe XD, Photoshop, Illustrator - Design tools
 * Final Cut Pro, After Effects - Video tools
 
 ## Authors
 
-* **Aisana** - *Designer* 
-* **Caitlin** - *Motion/video* 
-* **Mariah** - *Developer* 
+* **Aisana Ungarsynova** - *Designer* 
+* **Caitlin Mackay** - *Motion/video* 
+* **MariahAlderson** - *Developer* 
 
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
