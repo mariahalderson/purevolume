@@ -5,24 +5,56 @@ var vid = document.querySelector("video"),
 	stopbtn = document.querySelector("#stop"),
 	replaybtn = document.querySelector("#replay");
 
-//change video source based on screen width
-function pickvid(){
 
-	var winwidth = window.innerWidth;
-	console.log(winwidth);
-	if(winwidth < 1000){
-		vid.src="video/purevolumevidMOBILE.mp4";
-	}else{
-		vid.src="video/purevolumevidDESKTOP.mp4";
-	}
+
+
+
+// media query event handler
+if (matchMedia) {
+const mq = window.matchMedia("(min-width: 1000px)");
+mq.addListener(WidthChange);
+WidthChange(mq);
 }
 
+// media query change
+function WidthChange(mq) {
+if (mq.matches) {
+	vid.src="video/purevolumevidDESKTOP.mp4";
+} else {
+	vid.src="video/purevolumevidMOBILE.mp4";
+}
+}
+
+
+
+//change video source based on screen width
+// function pickvid(){
+
+// 	var winwidth = window.innerWidth;
+// 	console.log(winwidth);
+// 	if(winwidth < 1000){
+// 		vid.src="video/purevolumevidMOBILE.mp4";
+// 	}else{
+// 		vid.src="video/purevolumevidDESKTOP.mp4";
+// 	}
+// }
+
+//function videosize(){
+// if(window.matchMedia("(min-width: 1000px)").matches){
+// 	vid.src = "video/purevolumevidDESKTOP.mp4";
+// }else{
+// 	vid.src = "video/purevolumevidMOBILE.mp4";
+// }
+//}
+
+//videosize();
+
 //choose correct video size
-pickvid();
+//pickvid();
 
 
 //change video src if window resizes
-window.addEventListener('resize', pickvid);
+//window.addEventListener('resize', pickvid);
 
 
 
