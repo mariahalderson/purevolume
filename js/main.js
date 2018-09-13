@@ -62,3 +62,5 @@ var hamburger = document.querySelector("#hamburgermenu"),
 	 		searchbar.style.height = "0px";
 	 	}
 	 });
+
+	 
