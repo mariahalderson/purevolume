@@ -1,6 +1,10 @@
 # Pure Volume Redesign
 
-The goal of our redesign was so show better usability, a more friendly UI, and to portray Pure Volume as a website that is current, hip, and the best spot to find any popculture news you could need.
+**Pure Volume will get you the latest news and coverage in everything Entertainment, Music, and Pop Culture**
+
+Regular updates will keep you informed and ready to discuss anything from your favourite musicians and celebrities. 
+
+In this sleek new redesign the landing page becomes easier to navigate, and shows an organized layout of the latest articles in every category. With a fixed nav and animated highlight to always let you know where you are, you'll stay intruiged and never get lost. Simplicity is key in this design.  
 
 ## Built With
 
