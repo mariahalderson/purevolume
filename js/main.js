@@ -46,7 +46,7 @@ var hamburger = document.querySelector("#hamburgermenu"),
 
 	});
 
-	 searchbutton.addEventListener('click', function(){
+	 searchbutton.addEventListener('click', function(e){
 	 	//toggle search bar on/off
 	 	searchbar.classList.toggle("hide");
 
@@ -61,6 +61,26 @@ var hamburger = document.querySelector("#hamburgermenu"),
 
 	 		searchbar.style.height = "0px";
 	 	}
+
 	 });
 
-	 
+
+
+//close search window if user clicks off of input
+searchbar.addEventListener('click', function(e){
+
+	if(e.target.tagName = "div" && e.target.classList.contains("searchinput")){
+	 		
+		searchbar.style.height = "0px";
+		 	setTimeout(function(){
+		 		searchbar.classList.add("hide");
+		 	}, 5);
+
+	 	}else{
+			return;
+	 	}
+
+	 });
+
+
+
