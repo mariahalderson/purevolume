@@ -446,10 +446,6 @@ section .acontainer:nth-child(3), section .acontainer:nth-child(4){
 	display: none;
 }
 
-.article:focus .acontainer{
-	border: 2px solid red;
-}
-
 .article{
 	display: flex;
 	justify-content: space-around;
