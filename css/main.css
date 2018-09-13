@@ -435,7 +435,7 @@ footer{
 
 
 /*article sections*/
-section .article:nth-child(3), section .article:nth-child(4){
+section .acontainer:nth-child(3), section .acontainer:nth-child(4){
 	display: none;
 }
 
@@ -443,6 +443,7 @@ section .article:nth-child(3), section .article:nth-child(4){
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	justify-content: center;
 	margin-bottom: 22px;
 	padding-bottom: 22px;
 	border-bottom: 0.5px solid rgba(0,0,0,0.1);
@@ -669,7 +670,7 @@ section .article:nth-child(3), section .article:nth-child(4){
 		margin: 0px 30px;
 	}
 
-	section .article:nth-child(3), section .article:nth-child(4){
+	section .acontainer:nth-child(3), section .acontainer:nth-child(4){
 		display: flex;
 	}
 
