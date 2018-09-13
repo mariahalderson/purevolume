@@ -5,6 +5,28 @@ var vid = document.querySelector("video"),
 	stopbtn = document.querySelector("#stop"),
 	replaybtn = document.querySelector("#replay");
 
+
+
+
+
+// media query event handler
+if (matchMedia) {
+const mq = window.matchMedia("(min-width: 1000px)");
+mq.addListener(WidthChange);
+WidthChange(mq);
+}
+
+// media query change
+function WidthChange(mq) {
+if (mq.matches) {
+	vid.src="video/purevolumevidDESKTOP.mp4";
+} else {
+	vid.src="video/purevolumevidMOBILE.mp4";
+}
+}
+
+
+
 //change video source based on screen width
 // function pickvid(){
 
@@ -18,14 +40,14 @@ var vid = document.querySelector("video"),
 // }
 
 //function videosize(){
-if(window.matchMedia("(min-width: 1000px)").matches){
-	vid.src = "video/purevolumevidDESKTOP.mp4";
-}else{
-	vid.src = "video/purevolumevidMOBILE.mp4";
-}
+// if(window.matchMedia("(min-width: 1000px)").matches){
+// 	vid.src = "video/purevolumevidDESKTOP.mp4";
+// }else{
+// 	vid.src = "video/purevolumevidMOBILE.mp4";
+// }
 //}
 
-//vudeosize();
+//videosize();
 
 //choose correct video size
 //pickvid();
